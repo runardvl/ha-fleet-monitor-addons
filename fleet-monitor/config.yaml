@@ -1,9 +1,12 @@
 name: Fleet Monitor
+
 version: "0.0.1"
 
 slug: fleet_monitor
 
 description: Fleet Monitor Home Assistant Add-on
+
+url: https://github.com/runardvl/ha-fleet-monitor-addons
 
 startup: application
 

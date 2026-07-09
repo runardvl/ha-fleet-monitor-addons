@@ -1,0 +1,24 @@
+name: Fleet Monitor
+version: "0.0.1"
+
+slug: fleet_monitor
+
+description: Fleet Monitor Home Assistant Add-on
+
+startup: application
+
+boot: auto
+
+arch:
+  - amd64
+  - aarch64
+
+options:
+  backend_url: "http://localhost:3000"
+  token: ""
+  interval: 30
+
+schema:
+  backend_url: str
+  token: password
+  interval: int

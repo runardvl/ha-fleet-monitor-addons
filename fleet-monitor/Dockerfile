@@ -3,9 +3,12 @@ FROM node:22-alpine
 WORKDIR /app
 
 COPY package.json ./
+COPY tsconfig.json ./
 
 RUN npm install
 
-COPY . .
+COPY src ./src
 
-CMD ["npx", "tsx", "src/bootstrap.ts"]
+RUN npm run build
+
+CMD ["npm", "start"]

@@ -8,6 +8,7 @@ COPY tsconfig.json ./
 RUN npm install
 
 COPY src ./src
+COPY scripts ./scripts
 
 RUN echo "===== FILES BEFORE BUILD ====="
 RUN find src

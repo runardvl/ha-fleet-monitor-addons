@@ -9,7 +9,10 @@
     "skipLibCheck": true,
     "noEmit": false,
     "outDir": "dist",
-    "rootDir": "src"
+    "rootDir": "src",
+
+    "resolveJsonModule": true
   },
+
   "include": ["src"]
 }

@@ -1,3 +1,9 @@
+/**
+ * TypeScript (ESM + Bundler) doesn't append .js extensions.
+ * Node.js ESM requires explicit extensions.
+ * This script rewrites compiled imports after tsc.
+ */
+
 import { promises as fs } from "fs";
 import path from "path";
 

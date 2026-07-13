@@ -1,4 +1,6 @@
-import { env } from "./env";
 import { loadAddonConfig } from "./addon-config";
+import { loadEnvConfig } from "./env";
 
-export const config = loadAddonConfig() ?? env;
+const addonConfig = loadAddonConfig();
+
+export const config = addonConfig ?? loadEnvConfig();

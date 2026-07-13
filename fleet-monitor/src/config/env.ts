@@ -8,8 +8,8 @@ const getEnv = (key: string): string => {
   return value;
 };
 
-export const env = {
-  backendUrl: getEnv("BACKEND_URL") ?? "http://localhost:3000",
+export const loadEnvConfig = () => ({
+  backendUrl: getEnv("BACKEND_URL"),
   token: getEnv("TOKEN"),
   intervalSeconds: Number(process.env.INTERVAL ?? 30),
-};
+});
